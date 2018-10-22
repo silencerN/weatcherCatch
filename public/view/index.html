@@ -10,6 +10,13 @@
 </head>
 <body>
 <input type="text" id="zipInput"/>
-<button onclick="singleSearch()">singleSearch</button>
+<button onclick="singleSearch()">singleSearch</button><br/>
+<hr/>
+<button onclick="LoadGeometryList()">LoadGeometryList(只需要初始化一次,已保存)</button><button onclick="console.table(GeometryAsset,null,2)">查看GeometryList</button><br/>
+<button onclick="initWeatherInfo()">initWeatherInfo(只需要初始化一次，后面用update)</button><br/>
+<hr/>
+<button onclick="findWeatherInfo()">findWeatherInfo(从数据库读天气信息)</button><br/>
+<button onclick="LoadchWeather()">LoadchWeather(抓取信息)</button><button onclick="console.table(CurrentWeatherInfo,null,2)">查看抓取的Weather信息</button><br/>
+<button onclick="updateWeatherInfo()">updateWeatherInfo(更新信息)</button><br/>
 </body>
 </html>
